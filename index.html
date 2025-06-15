@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Topical Authority Matchmaker</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Raleway&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Raleway', sans-serif;
+      padding: 20px;
+      background-color: #F3F4F6;
+      color: #0D3D65;
+      max-width: 800px;
+      margin: auto;
+    }
+    h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 26px;
+      margin-bottom: 10px;
+    }
+    .accordion {
+      background-color: #fff;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-bottom: 12px;
+    }
+    .accordion-header {
+      background-color: #FF6B35;
+      color: #fff;
+      padding: 15px;
+      cursor: pointer;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: bold;
+    }
+    .accordion-body {
+      display: none;
+      padding: 15px;
+      background: #fff;
+      border-top: 1px solid #ccc;
+    }
+    .accordion.open .accordion-body {
+      display: block;
+    }
+    a {
+      color: #1CABE2;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Topical Authority Matchmaker</h2>
+  <p>This tool helps you turn any blog, podcast, or idea into a complete multi-platform content strategy.</p>
+
+  <div class="accordion">
+    <div class="accordion-header">✅ I Have Existing Content</div>
+    <div class="accordion-body">
+      <ul>
+        <li><strong>Blog posts</strong> → Social posts, video scripts, content plan</li>
+        <li><strong>Podcasts</strong> → Blog + repurposing kit</li>
+        <li><strong>Webinars</strong> → Clips, posts, scripts</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="accordion">
+    <div class="accordion-header">❌ I Don’t Have Content Yet</div>
+    <div class="accordion-body">
+      <ul>
+        <li>Send us voice notes or bullet points → we write + repurpose</li>
+        <li>Start with a strategy call → we extract your ideas</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="accordion">
+    <div class="accordion-header">🎯 Recommended Packages</div>
+    <div class="accordion-body">
+      <ul>
+        <li>Starter: 1 blog or input → content kit</li>
+        <li>Growth: Weekly content engine</li>
+        <li>Authority: Full strategy + repurposing system</li>
+      </ul>
+      <p><a href="#form">📄 Request Your Free Sample</a></p>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const headers = document.querySelectorAll('.accordion-header');
+      headers.forEach(header => {
+        header.addEventListener('click', () => {
+          const parent = header.parentElement;
+          parent.classList.toggle('open');
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>
